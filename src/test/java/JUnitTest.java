@@ -15,7 +15,7 @@
   * 4. Queue
   * 5. HashMap
   */
- public class JUnitTesting {
+ public class JUnitTest {
      //Set
      private Set<Integer> integerSet;
     //Linked List
@@ -100,21 +100,21 @@
      /**
       * 2. Linked List Tests
       */
-    //JUnitTesting for null
+    //JUnitTest for null
      @Test
      public void linkedListNotNull(){
         linkedList = new LinkedList<Integer>();
         Assertions.assertNotNull(linkedList);
      }
 
-     //JUnitTesting for adding element to linked list
+     //JUnitTest for adding element to linked list
      @Test
      public void  linkedListAdd() {
          linkedList = new LinkedList<Integer>();
          Assertions.assertTrue(linkedList.add(1));
      }
 
-     //JUnitTesting for - after adding clearing linked list
+     //JUnitTest for - after adding clearing linked list
      @Test
      public void  linkedListClear() {
          linkedList = new LinkedList<Integer>();
@@ -123,7 +123,7 @@
          Assertions.assertEquals( 0,linkedList.size());
      }
 
-     //JUnitTesting for checking containing element or not
+     //JUnitTest for checking containing element or not
      @Test
      public void  linkedListContains(){
          linkedList = new LinkedList<Integer>();
@@ -131,7 +131,7 @@
          Assertions.assertTrue(linkedList.contains(1));
      }
 
-     //JUnitTesting for checking containing elements or not
+     //JUnitTest for checking containing elements or not
      @Test
      public void  linkedListContainsAll(){
          linkedList = new LinkedList<Integer>();
@@ -143,7 +143,7 @@
          Assertions.assertTrue(linkedList.containsAll(intList));
      }
 
-     //JUnitTesting fir getting first element from added list
+     //JUnitTest fir getting first element from added list
      @Test
      public void linkedListGetFirst()
      {
@@ -160,18 +160,18 @@
              fail();
          }
          catch (NoSuchElementException e) {
-             /* JUnitTesting passed */
+             /* JUnitTest passed */
          }
      }
 
-     //JUnitTesting for checking for empty
+     //JUnitTest for checking for empty
      @Test
      public void  linkedListIsEmpty() {
          linkedList = new LinkedList<Integer>();
          Assertions.assertTrue(linkedList.isEmpty());
      }
 
-     //JUnitTesting fir removing element from linked list
+     //JUnitTest fir removing element from linked list
      @Test
      public void  linkedListRemove() {
          linkedList = new LinkedList<>();
@@ -180,7 +180,7 @@
      }
 
 
-     //JUnitTesting for getting size of linked list
+     //JUnitTest for getting size of linked list
      @Test
      public void  linkedListSize(){
          linkedList = new LinkedList<>();
